@@ -65,12 +65,16 @@ Setup STM32F103 Development Environment
 3. Setup project
 
  3.1 vscode folder
+ 
    - cmake-kits.json
    - launch.json
    
  3.2 tools folder
+ 
     arm-none-eabi-gcc.cmake
 
-4. Reference 
-  4.1 https://code.visualstudio.com/docs
-  4.2 https://cmake.org/cmake/help/latest/
+4. Reference
+
+  - https://code.visualstudio.com/docs 
+  - https://cmake.org/cmake/help/latest
+  - https://ninja-build.org/
