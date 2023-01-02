@@ -1,4 +1,4 @@
-# stm32f103_vscode
+# STM32F103 using VSCode & CMake
 
 Setup STM32F103 Development Environment
 
