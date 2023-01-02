@@ -10,8 +10,8 @@ Setup STM32F103 Development Environment
  2)Compilier  : gcc-arm-none-eabi-9-2020-q2-update-win32
  
  3)Build tool : 
-   - ninja-win-v1.11.1 : OK
-   - xpack-windows-build-tools-4.2.1-2 : NG
+   - ninja-win-v1.11.1 : Result OK
+   - xpack-windows-build-tools-4.2.1-2 : Result Fail
    
  4)GDB Server : xpack-openocd-0.10.0-15
 
