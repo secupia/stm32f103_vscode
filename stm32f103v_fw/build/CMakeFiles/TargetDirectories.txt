@@ -1,0 +1,3 @@
+D:/stm32f103_vscode/stm32f103v_fw/build/CMakeFiles/stm32_fw.elf.dir
+D:/stm32f103_vscode/stm32f103v_fw/build/CMakeFiles/edit_cache.dir
+D:/stm32f103_vscode/stm32f103v_fw/build/CMakeFiles/rebuild_cache.dir

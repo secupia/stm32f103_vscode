@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "stm32f103_fw"
+		}
+	],
+	"settings": {
+		"cmake.configureArgs": [
+			"-DARM_TOOLCHAIN_DIR=D:/tools/gcc-arm-none-eabi-9-2020-q2-update-win32/bin",
+			"-DCMAKE_MAKE_PROGRAM=D:/tools/ninja-win-v1.11.1/ninja.exe"
+		],
+		"cmake.generator": "Ninja",
+		//"files.associations": {
+		//	"gpio.h": "c",
+		//	"main.h": "c",
+		//	"stm32f1xx.h": "c"
+		//},
+		"cortex-debug.armToolchainPath": "D:/tools/gcc-arm-none-eabi-9-2020-q2-update-win32/bin",
+		"cortex-debug.openocdPath": "D:/tools/xpack-openocd-0.10.0-15/bin/openocd",
+	}
+}

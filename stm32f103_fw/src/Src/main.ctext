@@ -1,0 +1,11 @@
+//#include <stio.h>
+
+int main()
+{
+    while(1)
+    {
+        asm volatile("NOP");
+    }
+
+    return 0;
+}

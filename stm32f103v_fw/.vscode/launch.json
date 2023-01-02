@@ -1,0 +1,80 @@
+// Configure debug launch settings
+// Feel free to copy these and modify them for your debugger and MCU
+{
+    "version": "0.2.0",
+    "projectName": "test-f103v",
+    "configurations": [
+        {
+            "name": "OpenOCD debug",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/stm32_fw.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            //"servertype": "jlink",
+            "servertype": "openocd",
+            "device": "STM32F103VE",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32F1x.cfg"
+            ],
+            "interface": "swd",
+            //"runToMain": true, // else it starts at reset handler - not interested
+            //"preLaunchTask": "Build all", // configured in tasks.json
+            // "preLaunchCommands": ["Build all"], // you can execute command instead of task
+            "svdFile": "./tools/STM32F103xx.svd", // Include svd to watch device peripherals
+            "swoConfig":
+            {
+                "enabled": true,
+                "cpuFrequency": 160000000,
+                "swoFrequency": 4000000,
+                "source": "probe",
+                "decoders":
+                [
+                    {
+                        "label": "ITM port 0 output",
+                        "type": "console",
+                        "port": 0,
+                        "showOnStartup": true,
+                        "encoding": "ascii"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "OpenOCD attach",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/stm32_fw.elf",
+            "request": "attach",
+            "type": "cortex-debug",
+            //"servertype": "jlink",
+            "servertype": "openocd",
+            "device": "STM32F103VE",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32F1x.cfg"
+            ],
+            "interface": "swd",
+            //"runToMain": true, // else it starts at reset handler - not interested
+            //"preLaunchTask": "Build all", // configured in tasks.json
+            // "preLaunchCommands": ["Build all"], // you can execute command instead of task
+            "svdFile": "./tools/STM32F103xx.svd", // Include svd to watch device peripherals
+            "swoConfig":
+            {
+                "enabled": true,
+                "cpuFrequency": 160000000,
+                "swoFrequency": 4000000,
+                "source": "probe",
+                "decoders":
+                [
+                    {
+                        "label": "ITM port 0 output",
+                        "type": "console",
+                        "port": 0,
+                        "showOnStartup": true,
+                        "encoding": "ascii"
+                    }
+                ]
+            }
+        }
+    ]
+}
