@@ -77,7 +77,7 @@ target_link_options(${EXECUTABLE} PRIVATE
   -Xlinker -print-memory-usage -Xlinker
   )
 
-# Making .elf file 
+# Making .bin file 
 add_custom_command(TARGET ${EXECUTABLE} 
     POST_BUILD
     COMMAND ${CMAKE_OBJCOPY} ARGS -O binary ${EXECUTABLE} ${PROJECT_NAME}.bin
