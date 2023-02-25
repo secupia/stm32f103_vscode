@@ -46,6 +46,22 @@
 			"value" : "D:/tools/gcc-arm-none-eabi-9-2020-q2-update-win32/bin/arm-none-eabi-ar.exe"
 		},
 		{
+			"name" : "CMAKE_ASM_COMPILER",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "(This variable does not exist and should not be used)"
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : ""
+		},
+		{
 			"name" : "CMAKE_ASM_COMPILER_AR",
 			"properties" : 
 			[
@@ -890,6 +906,10 @@
 			"properties" : 
 			[
 				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
 					"name" : "HELPSTRING",
 					"value" : "objcopy tool"
 				}
@@ -1291,11 +1311,11 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "The CMake toolchain file"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "d:/stm32f103_vscode/stm32f103_fw/tools/arm-none-eabi-gcc.cmake"
+			"value" : "D:/stm32f103_vscode/stm32f103_fw/tools/arm-none-eabi-gcc.cmake"
 		},
 		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",

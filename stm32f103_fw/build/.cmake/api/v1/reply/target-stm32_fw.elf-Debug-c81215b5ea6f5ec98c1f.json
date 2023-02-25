@@ -34,13 +34,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 66,
+				"line" : 68,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 50,
+				"line" : 52,
 				"parent" : 0
 			},
 			{
@@ -125,6 +125,14 @@
 				{
 					"backtrace" : 5,
 					"path" : "D:/stm32f103_vscode/stm32f103_fw/src/Drivers/STM32F1xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/tools/gcc-arm-none-eabi-9-2020-q2-update-win32/arm-none-eabi/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/tools/gcc-arm-none-eabi-9-2020-q2-update-win32/arm-none-eabi/include/newlib-nano"
 				}
 			],
 			"language" : "C",
@@ -155,7 +163,10 @@
 				14,
 				15,
 				16,
-				17
+				17,
+				18,
+				19,
+				20
 			]
 		},
 		{
@@ -221,12 +232,20 @@
 				{
 					"backtrace" : 5,
 					"path" : "D:/stm32f103_vscode/stm32f103_fw/src/Drivers/STM32F1xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/tools/gcc-arm-none-eabi-9-2020-q2-update-win32/arm-none-eabi/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/tools/gcc-arm-none-eabi-9-2020-q2-update-win32/arm-none-eabi/include/newlib-nano"
 				}
 			],
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				18
+				21
 			]
 		}
 	],
@@ -326,14 +345,17 @@
 				14,
 				15,
 				16,
-				17
+				17,
+				18,
+				19,
+				20
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				18
+				21
 			]
 		}
 	],
@@ -372,7 +394,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "src/Src/sysmem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "src/Src/system_stm32f1xx.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Src/usart.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -445,6 +479,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c",
 			"sourceGroupIndex" : 0
 		},
 		{

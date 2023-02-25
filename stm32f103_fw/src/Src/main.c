@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2023 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under BSD 3-Clause license,
@@ -20,11 +20,15 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "stm32f1xx_hal.h"
+#include "stm32f1xx_hal_gpio.h"
+#include "stm32f1xx_hal_uart.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -57,6 +61,23 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+#if 0
+PUTCHAR_PROTOTYPE
+{
+  HAL_UART_Transmit(&huart2, (uint8_t*)&ch, 1, 0xFFFF);
+}
+#endif
+int _write(int file, char *ptr, int len)
+{
+	int DataIdx;
+
+	//for (DataIdx = 0; DataIdx < len; DataIdx++)
+	{
+		//__io_putchar(*ptr++);
+    HAL_UART_Transmit(&huart2, (uint8_t*)ptr, len, 0xFF);
+	}
+	return len;
+}
 /* USER CODE END 0 */
 
 /**
@@ -66,7 +87,7 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+  uint8_t data[] = "Hello STM32 VScode\r\n";
   /* USER CODE END 1 */
   
 
@@ -88,8 +109,10 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-
+  //setbuf(stdin, NULL);
+  setvbuf(stdout, NULL, _IONBF, 0);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -97,9 +120,12 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-    HAL_Delay(200);
+
     /* USER CODE BEGIN 3 */
+    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+    HAL_Delay(1000);
+    printf("Hello STM32 VScode!!\r\n");
+    //HAL_UART_Transmit(&huart2, (uint8_t *)data, sizeof(data), 0xFFFFFFFF);
   }
   /* USER CODE END 3 */
 }

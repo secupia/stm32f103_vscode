@@ -44,6 +44,8 @@ target_include_directories(${EXECUTABLE} PRIVATE
   src/Drivers/CMSIS/Device/ST/STM32F1xx/Include
   src/Drivers/CMSIS/Include
   src/Drivers/STM32F1xx_HAL_Driver/Inc
+  D:/tools/gcc-arm-none-eabi-9-2020-q2-update-win32/arm-none-eabi/include
+  D:/tools/gcc-arm-none-eabi-9-2020-q2-update-win32/arm-none-eabi/include/newlib-nano
   )
 
 # Compiler options

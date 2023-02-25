@@ -10,7 +10,9 @@ set(OLD_GLOB
   "D:/stm32f103_vscode/stm32f103_fw/src/Src/stm32f1xx_hal_msp.c"
   "D:/stm32f103_vscode/stm32f103_fw/src/Src/stm32f1xx_it.c"
   "D:/stm32f103_vscode/stm32f103_fw/src/Src/syscalls.c"
+  "D:/stm32f103_vscode/stm32f103_fw/src/Src/sysmem.c"
   "D:/stm32f103_vscode/stm32f103_fw/src/Src/system_stm32f1xx.c"
+  "D:/stm32f103_vscode/stm32f103_fw/src/Src/usart.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -32,6 +34,7 @@ set(OLD_GLOB
   "D:/stm32f103_vscode/stm32f103_fw/src/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c"
   "D:/stm32f103_vscode/stm32f103_fw/src/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c"
   "D:/stm32f103_vscode/stm32f103_fw/src/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c"
+  "D:/stm32f103_vscode/stm32f103_fw/src/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
