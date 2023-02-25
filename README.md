@@ -72,6 +72,9 @@ Setup STM32F103 Development Environment
  3.2 tools folder
  
     arm-none-eabi-gcc.cmake
+    
+ 3.3 clangd
+   - inlay hints : off
 
 4. Reference
 
